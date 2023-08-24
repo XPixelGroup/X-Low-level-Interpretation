@@ -28,6 +28,7 @@
 - [Interpreting Super-Resolution Networks with Local Attribution Maps](#lam)
 - [Rethinking Alignment in Video Super-Resolution Transformers](#rethinking)
 - [Networks are Slacking Off: Understanding Generalization Problem in Image Deraining](#derain)
+- [Finding Discriminative Filters for Specific Degradations in Blind Super-Resolution](#faig)
 
 # Papers
 
