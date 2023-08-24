@@ -13,7 +13,7 @@
 
 <div align="center">
 
-English | [简体中文](README_zh-CN.md)
+<!-- English | [简体中文](README_zh-CN.md) -->
 
 </div>
 
@@ -101,6 +101,26 @@ This is due to **the networks are learning the least complex elements to minimiz
 
 - **Authors**: Jinjin Gu, Xianzheng Ma, Xiangtao Kong, Yu Qiao, Chao Dong
 - **Links**: :scroll:[`paper`](https://arxiv.org/abs/2305.15134)
+
+## <a name="faig"></a>Finding Discriminative Filters for Specific Degradations in Blind Super-Resolution
+
+Recent blind super-resolution (SR) methods typically consist of two branches, one for degradation prediction and the other for conditional restoration. However, our experiments show that a one-branch network can achieve comparable performance to the two-branch scheme.
+
+Then we wonder: how can one-branch networks automatically learn to distinguish degradations? To find the answer, we propose **Filter Attribution method based on Integral Gradient (FAIG)**, which aims at finding the most discriminative filters for degradation removal in blind SR networks. With the discovered filters, we further develop a method to predict the degradation of an input image. Based on FAIG, we show that, in one-branch blind SR networks:
+
+1. We are able to find a very small number of (1%) discriminative filters for each specific degradation.
+2. The weights, locations and connections of the discovered filters are all important to determine the specific network function.
+3. The task of degradation prediction can be implicitly realized by these discriminative filters without explicit supervised learning.
+
+Our findings can not only help us better understand network behaviors inside one-branch blind SR networks, but also provide guidance on designing more efficient architectures and diagnosing networks for blind SR.
+
+<div align="center">
+  <img src="assets/faig.png" width="700"/>
+</div>
+
+- **Authors**: Liangbin Xie, Xintao Wang, Chao Dong, Zhongang Qi, Ying Shan
+- Accepted at NIPS'21 (spotlight)
+- **Links**: :scroll:[`paper`](https://arxiv.org/abs/2108.01070) :computer:[`code`](https://github.com/TencentARC/FAIG)
 
 # License
 
